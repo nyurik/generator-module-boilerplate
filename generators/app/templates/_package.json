@@ -6,6 +6,10 @@
   "browser": "dist/<%= ccname %>.js",
   "module": "es/index.js",
   "jsxnext:main": "es/index.js",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "watch": {
     "prepublish": {
       "patterns": [
@@ -30,7 +34,7 @@
   ],
   "scripts": {
     "lint": "eslint src/*.js",
-    "test": "jest --coverage",
+    "test": "jest",
     "prepublish": "npm run lint && npm run build:cjs && npm run test",
     "development": "npm-watch",
     "build": "npm run prepublish && npm run build:es && npm run build:umd",
@@ -41,10 +45,7 @@
   "keywords": [],
   "author": "<%= author %> (<%= email %>)",
   "license": "<%= license %>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/<%= github %>/<%= name %>.git"
-  },
+  "repository": "<%= github %>/<%= name %>",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.17.0",
@@ -53,6 +54,7 @@
     "cross-env": "^3.1.3",
     "eslint": "^3.7.1",
     "eslint-config-devine": "^1.5.0",
+    "eslint-plugin-babel": "^3.3.0",
     "jest": "^16.0.1",
     "rimraf": "^2.5.4",
     "npm-watch": "^0.1.6",

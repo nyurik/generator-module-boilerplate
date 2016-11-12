@@ -161,7 +161,7 @@ module.exports = generator.Base.extend({
       const git = [
         {from: `licences/${this.props.license}`, to: `LICENSE`},
         `README.md`,
-        `.gitignore`
+        {from: `_gitignore`, to: `.gitignore`}
       ];
 
       const babel = [
