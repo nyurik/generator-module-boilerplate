@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "<%= version %>",
+  "version": "0.1.0",
   "description": "<%= description %>",
   "main": "cjs/index.js",
   "browser": "dist/<%= ccname %>.js",
@@ -37,11 +37,11 @@
     "build": "npm run build:cjs && npm run clean && npm run build:es && npm run build:umd",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
     "build:cjs": "rimraf cjs && cross-env BABEL_ENV=cjs babel src --out-dir cjs && npm run test",
-    "build:umd": "cross-env BABEL_ENV=es rollup -c && cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
+    "build:umd": "cross-env BABEL_ENV=es rollup -c & cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
   },
   "keywords": [],
   "author": "<%= author %> (<%= email %>)",
-  "license": "MIT",
+  "license": "<%= license %>",
   "repository": {
     "type": "git",
     "url": "https://github.com/<%= github %>/<%= name %>.git"

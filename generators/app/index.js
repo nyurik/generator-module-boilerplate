@@ -68,18 +68,9 @@ module.exports = generator.Base.extend({
   initializing() {
 
     this.props = {
-
-      umd: true,
-
-      esnext: true,
-      commonjs: true,
-
-      jest: true,
-
       yarn: true,
-
-      nodeVersion: process.version.split(`v`)[1]
-
+      license: `MIT`,
+      year: new Date().getFullYear()
     };
 
     try {
@@ -100,28 +91,44 @@ module.exports = generator.Base.extend({
       message: `Module Name`,
       default: this.appname
     }, {
-      type: `input`,
-      name: `version`,
-      message: `Module Version`,
-      default: `0.1.0`
-    }, {
-      type: `input`,
-      name: `github`,
-      message: `Your Github username`,
+      type: `rawlist`,
+      name: `license`,
+      message: `License`,
+      choices: [{
+        value: `MIT`,
+        name: `MIT`
+      }, {
+        value: `BSD-2-Clause`,
+        name: `BSD-2-Clause`
+      }, {
+        value: `BSD-3-Clause`,
+        name: `BSD-3-Clause`
+      }, {
+        value: `ISC`,
+        name: `ISC`
+      }, {
+        value: `Apache-2.0`,
+        name: `Apache-2.0`
+      }]
     }, {
       type: `input`,
       name: `author`,
-      message: `Module author (used in license)`,
+      message: `Author (also used in license)`,
       default: author.trim()
     }, {
       type: `input`,
       name: `email`,
-      message: `Module author email`,
+      message: `Author Email`,
       default: email.trim()
     }, {
       type: `input`,
       name: `description`,
-      message: `Module description`,
+      message: `Description`,
+      default: `this is a description`
+    }, {
+      type: `input`,
+      name: `github`,
+      message: `Github Username`,
     }]).then(props => {
       this.props = Object.assign(this.props, props);
       this.props.ccname = this._camelCase(this.props.name);
@@ -152,7 +159,7 @@ module.exports = generator.Base.extend({
       ];
 
       const git = [
-        `LICENSE`,
+        {from: `licences/${this.props.license}`, to: `LICENSE`},
         `README.md`,
         `.gitignore`
       ];
