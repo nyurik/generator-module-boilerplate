@@ -6,10 +6,6 @@
   "browser": "dist/<%= ccname %>.js",
   "module": "es/index.js",
   "jsxnext:main": "es/index.js",
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
-  },
   "watch": {
     "prepublish": {
       "patterns": [
@@ -34,7 +30,7 @@
   ],
   "scripts": {
     "lint": "eslint src/*.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "prepublish": "npm run lint && npm run build:cjs && npm run test",
     "development": "npm-watch",
     "build": "npm run prepublish && npm run build:es && npm run build:umd",
