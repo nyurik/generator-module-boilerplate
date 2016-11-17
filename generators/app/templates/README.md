@@ -38,7 +38,7 @@ import <%= ccname %> from '<%= name %>';
 
 ### configuration
 
-You can pass in extra options as a configuration object. (➕ required, ➖ optional, ✏️ default)
+You can pass in extra options as a configuration object (➕ required, ➖ optional, ✏️ default)
 
 ```js
 
@@ -68,4 +68,4 @@ see [`example`](example/script.js) folder or the [runkit](https://runkit.com/<%=
 
 ### License
 
-[<%= license %>](LICENSE.md)
+[<%= license %>](LICENSE)
