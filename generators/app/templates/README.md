@@ -5,16 +5,17 @@
 [![NPM](https://img.shields.io/npm/v/<%= name %>.svg?style=flat-square)](https://www.npmjs.com/package/<%= name %>)
 [![David](https://img.shields.io/david/<%= github %>/<%= name %>.svg?style=flat-square)](https://david-dm.org/<%= github %>/<%= name %>)
 [![Travis](https://img.shields.io/travis/<%= github %>/<%= name %>/master.svg?style=flat-square)](https://travis-ci.org/<%= github %>/<%= name %>)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me/)
 
 ### Installation
 
-Install via yarn or npm
+Install via [yarn](https://github.com/yarnpkg/yarn)
 
-	yarn add <%= name %> -D
+	yarn add <%= name %> (--dev)
 
-or
+or npm
 
-	npm i <%= name %> -D
+	npm install <%= name %> (--dev)
 
 
 If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN)](https://unpkg.com/<%= name %>/), download the source, or point your package manager to the url.
@@ -23,7 +24,11 @@ If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN
 
 The `<%= name %>` package includes precompiled production and development [UMD](https://github.com/umdjs/umd) builds in the [`dist` folder](https://unpkg.com/<%= name %>/dist/). They can be used directly without a bundler and are thus compatible with many popular JavaScript module loaders and environments. You can drop a UMD build as a [`<script>` tag](https://unpkg.com/<%= name %>) on your page. The UMD builds make `<%= name %>` available as a `window.<%= ccname %>` global variable.
 
+This module was created using [generator-module-boilerplate](https://github.com/duivvv/generator-module-boilerplate).
+
 ### Usage
+
+### setup
 
 ```js
 
@@ -31,11 +36,35 @@ import <%= ccname %> from '<%= name %>';
 
 ```
 
-### Configuration
+### configuration
+
+You can pass in extra options (➕ required, ➖ optional, ✏️ default)
+
+```js
+
+import <%= ccname %> from '<%= name %>';
+
+```
+
+➖ **property** ( type ) ` ✏️ default `
+<br/> 📝 description
+<br/> ❗️ warning
+<br/> ℹ️ info
+<br/> 💡 example
+
+### methods
+
+#### #name
+
+```js
+
+<%= ccname %>
+
+```
 
 ### Examples
 
-see [`example` folder](example/)
+see [`example`](example/script.js) folder or the [runkit](https://runkit.com/<%= github %>/<%= name %>) example
 
 ### License
 
