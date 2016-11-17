@@ -7,7 +7,7 @@
   "module": "es/index.js",
   "jsxnext:main": "es/index.js",
   "watch": {
-    "check:build:test": {
+    "lint:build:test": {
       "patterns": [
         "src",
         "__tests__"
@@ -23,19 +23,19 @@
     "src"
   ],
   "pre-commit": [
-    "check:build:test"
+    "lint:build:test"
   ],
   "pre-push": [
-    "check:build:test"
+    "lint:build:test"
   ],
   "scripts": {
     "lint": "eslint src/*.js",
     "test": "jest --coverage",
-    "check:build:test": "npm run lint && npm run build:cjs && npm run test",
+    "lint:build:test": "npm run lint && npm run build:cjs && npm run test",
     "prepublish": "npm run build",
     "development": "npm-watch",
     "release": "release-it",
-    "build": "npm run check:build:test && npm run build:es && npm run build:umd",
+    "build": "npm run lint:build:test && npm run build:es && npm run build:umd",
     "build:es": "rimraf es && cross-env BABEL_ENV=es babel src --out-dir es",
     "build:cjs": "rimraf cjs && cross-env BABEL_ENV=cjs babel src --out-dir cjs",
     "build:umd": "rimraf dist && cross-env BABEL_ENV=es rollup -c & cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
