@@ -2,6 +2,8 @@ const generator = require(`yeoman-generator`);
 
 const {isPlainObject} = require(`lodash`);
 
+const init = require(`./lib/init`);
+
 const {
   spawnSync: spawn,
   execSync: exec
@@ -210,14 +212,17 @@ module.exports = generator.Base.extend({
 
   install() {
 
+    const {github, name} = this.props;
+
     this._spawn(`git init`);
+    this._spawn(`git remote add origin https://github.com/${github}/${name}.git`);
 
     if (this.props.yarn) this._spawn(`yarn`);
     else this._spawn(`npm install`);
 
     this._clearConsole();
 
-    this._spawn(`npm run development`);
+    init(this.props);
 
   }
 
