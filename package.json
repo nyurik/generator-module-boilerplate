@@ -10,7 +10,8 @@
   },
   "author": "Geoffrey Dhuyvetters",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "release-it"
   },
   "files": [
     "generators"
@@ -20,6 +21,7 @@
   ],
   "devDependencies": {
     "eslint": "^3.8.0",
+    "release-it": "^2.5.1",
     "eslint-config-devine": "^1.5.0"
   },
   "dependencies": {
