@@ -9,7 +9,14 @@ const {
 
 const mkdir = require(`mkdirp`);
 
+let isFirstClear = true;
+
 module.exports = generator.Base.extend({
+
+  _clearConsole() {
+    process.stdout.write(isFirstClear ? `\x1bc` : `\x1b[2J\x1b[0f`);
+    isFirstClear = false;
+  },
 
   _getNPMConfig() {
     const author = exec(`npm config get init.author.name`, {encoding: `utf-8`}) || ``;
@@ -207,6 +214,8 @@ module.exports = generator.Base.extend({
 
     if (this.props.yarn) this._spawn(`yarn`);
     else this._spawn(`npm install`);
+
+    this._clearConsole();
 
     this._spawn(`npm run development`);
 
