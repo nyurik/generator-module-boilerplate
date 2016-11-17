@@ -177,7 +177,12 @@ module.exports = generator.Base.extend({
       ];
 
       const npm = [
-        {from: `_package.json`, to: `package.json`}
+        {from: `_package.json`, to: `package.json`},
+        `.release.json`
+      ];
+
+      const ci = [
+        `.travis.yml`
       ];
 
       const files = [
@@ -186,7 +191,8 @@ module.exports = generator.Base.extend({
         ...babel,
         ...rollup,
         ...editor,
-        ...npm
+        ...npm,
+        ...ci
       ];
 
       files.forEach(f => this._copyFile(f));
