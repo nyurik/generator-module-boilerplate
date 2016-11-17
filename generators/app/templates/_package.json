@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "1.0.0.beta.0",
+  "version": "1.0.0-beta.0",
   "description": "<%= description %>",
   "main": "cjs/index.js",
   "browser": "dist/<%= ccname %>.js",
