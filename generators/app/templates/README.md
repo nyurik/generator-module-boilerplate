@@ -15,7 +15,7 @@ Install via [yarn](https://github.com/yarnpkg/yarn)
 
 or npm
 
-	npm install <%= name %> (--dev)
+	npm install <%= name %> (--save-dev)
 
 
 If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN)](https://unpkg.com/<%= name %>/), download the source, or point your package manager to the url.
