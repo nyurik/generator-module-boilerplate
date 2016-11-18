@@ -30,6 +30,8 @@
 
 <small>+ Invisible contract which states that you will use [gitmoji](https://gitmoji.carloscuesta.me/) for commits 🤘 (just kidding, but you should)</small>
 
+You should probably enable [greenkeeper](https://greenkeeper.io/) (keeps your dependencies up to date)
+
 ## Getting Started
 
 ### Dependencies
@@ -132,7 +134,6 @@ npm run release (premajor|patch|minor|major)
 5. **`npm publish`** (with **`npm run build`** as **prepublish** script)
 
 ⚠️ don't forget to answer `Y` on the 'publish to npm' question
-
 
 You can change the release settings in the `.release.json` file in the root of your module folder.
 
