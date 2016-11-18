@@ -40,14 +40,14 @@ install [yeoman](http://yeoman.io) & this module globally via [yarn](https://git
 
 (this is one of the 'never install modules globally' exceptions)
 
-```bash
+```console
 yarn global add yo
 yarn global add generator-module-boilerplate
 ```
 
 or via npm
 
-```bash
+```console
 npm install yo -g
 npm install generator-module-boilerplate -g
 ```
@@ -55,7 +55,7 @@ npm install generator-module-boilerplate -g
 ## Running the generator
 
 
-```bash
+```console
 yo module-boilerplate
 ```
 
@@ -65,7 +65,7 @@ yo module-boilerplate
 
 Testing via [Jest](https://facebook.github.io/jest/) in [interactive watch mode](https://egghead.io/lessons/javascript-use-jest-s-interactive-watch-mode)
 
-```bash
+```console
 npm run test:watch
 ```
 
@@ -74,7 +74,7 @@ Build watch script:
 1. **Linting** via [ESLint](http://eslint.org/)
 2. **[CommonJS](http://webpack.github.io/docs/commonjs.html) build** (`/cjs`) via [Babel](https://babeljs.io/)
 
-```bash
+```console
 npm run build:watch
 
 ```
@@ -83,7 +83,7 @@ npm run build:watch
 
 ### build ⚙️
 
-```bash
+```console
 npm run build
 ```
 The build command runs the following steps:
@@ -107,13 +107,13 @@ which equals to:
 
 [Jest](https://facebook.github.io/jest/) tests the [CommonJS](http://webpack.github.io/docs/commonjs.html) build folder (`/cjs`) for fast iteration
 
-```bash
+```console
 npm run test
 ```
 
 or with coverage (used in the git hooks and prepublish)
 
-```bash
+```console
 npm run test:coverage
 ```
 
@@ -123,7 +123,7 @@ npm run test:coverage
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
 ℹ️ premajor = x.x.x-beta.x
 
-```bash
+```console
 npm run release (premajor|patch|minor|major)
 ```
 
