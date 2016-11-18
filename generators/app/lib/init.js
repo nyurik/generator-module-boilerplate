@@ -15,14 +15,15 @@ module.exports = ({author, github, name}) => {
   console.log();
 
   console.log(`use`, chalk.cyan(`npm run build`));
-  console.log(`for production builds (ES, CommonJS, UMD)`);
+  console.log(`for production builds (ES2015, CommonJS, UMD)`);
 
   console.log();
 
-  console.log(`use`, chalk.cyan(`npm run release`), chalk.cyan(`'major' | 'premajor' | 'patch' | 'minor'`));
-  console.log(`to release a version to npm ( via https://github.com/webpro/release-it )`);
+  console.log(`use`, chalk.cyan(`npm run release (premajor|patch|minor|major)`));
 
-  console.log(`everything is set up to use https://github.com/${author}/${name}`);
+  console.log();
+
+  console.log(`everything is set up to push to https://github.com/${github}/${name}`);
 
   console.log();
 

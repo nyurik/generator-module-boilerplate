@@ -24,8 +24,6 @@ If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN
 
 The `<%= name %>` package includes precompiled production and development [UMD](https://github.com/umdjs/umd) builds in the [`dist` folder](https://unpkg.com/<%= name %>/dist/). They can be used directly without a bundler and are thus compatible with many popular JavaScript module loaders and environments. You can drop a UMD build as a [`<script>` tag](https://unpkg.com/<%= name %>) on your page. The UMD builds make `<%= name %>` available as a `window.<%= ccname %>` global variable.
 
-This module was created using [generator-module-boilerplate](https://github.com/duivvv/generator-module-boilerplate).
-
 ### Usage
 
 ### setup
@@ -69,3 +67,7 @@ see [`example`](example/script.js) folder or the [runkit](https://runkit.com/<%=
 ### License
 
 [<%= license %>](LICENSE)
+
+### Misc
+
+This module was created using [generator-module-boilerplate](https://github.com/duivvv/generator-module-boilerplate)
