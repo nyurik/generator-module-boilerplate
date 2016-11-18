@@ -19,13 +19,13 @@
 
 ## Nice to haves
 
-- **README.md** template
-- ... with [npm](https://www.npmjs.com/), [Travis](https://travis-ci.org/), [David](https://david-dm.org/), [Gitmoji](https://gitmoji.carloscuesta.me/) **badges** 😎
+- **README.md** template :memo:
+- ... with [npm](https://www.npmjs.com/), [Travis](https://travis-ci.org/), [David](https://david-dm.org/), [Gitmoji](https://gitmoji.carloscuesta.me/) **badges** :chart_with_upwards_trend:
 - **License** generation
-- **[Travis CI](https://travis-ci.org/)** integration
+- **[Travis CI](https://travis-ci.org/)** integration :construction_worker:
 - **[webpro/release-it](https://github.com/webpro/release-it)** integration
 - **Optimized** for [modern bundlers](https://github.com/rollup/rollup/wiki/jsnext:main)
-- **[unpkg](https://unpkg.com/)** ready
+- **[unpkg](https://unpkg.com/)** ready 😎
 
 
 <small>+ Invisible contract which states that you will use [gitmoji](https://gitmoji.carloscuesta.me/) for commits 🤘 (just kidding, but you should)</small>
@@ -101,7 +101,7 @@ which equals to:
 5. `npm run build:umd`
 
 
-### testing
+### testing :white_check_mark:
 
 [Jest](https://facebook.github.io/jest/) tests the [CommonJS](http://webpack.github.io/docs/commonjs.html) build folder (`/cjs`) for fast iteration
 
@@ -115,7 +115,7 @@ or with coverage (used in the git hooks and prepublish)
 npm run test:coverage
 ```
 
-### releasing
+### releasing 🔖
 
 
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
