@@ -119,8 +119,7 @@ npm run test:coverage
 
 
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
-
-📝 add _premajor ( -beta.x ) | patch | minor | major_
+ℹ️ premajor = x.x.x-beta.x
 
 ```bash
 npm run release (premajor|patch|minor|major)
