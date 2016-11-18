@@ -34,7 +34,7 @@
 
 ### Dependencies
 
-install [yeoman](http://yeoman.io) & this module globally via [yarn](https://github.com/yarnpkg/yarn) 
+install [yeoman](http://yeoman.io) & this module globally via [yarn](https://github.com/yarnpkg/yarn)
 
 (this is one of the 'never install modules globally' exceptions)
 
@@ -65,7 +65,7 @@ Testing via [Jest](https://facebook.github.io/jest/) in [interactive watch mode]
 
 ```bash
 npm run test:watch
-``` 
+```
 
 Build watch script:
 
@@ -115,7 +115,7 @@ or with coverage (used in the git hooks and prepublish)
 npm run test:coverage
 ```
 
-### releasing 
+### releasing
 
 
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
@@ -124,13 +124,13 @@ npm run test:coverage
 
 ```bash
 npm run release (premajor|patch|minor|major)
-``` 
+```
 
 1. Creates a **version bump** in package.json
-2. **Commits** a change with this message '🚀 vX.X.X'
+2. **Commits** a change with this message '🔖 vX.X.X'
 3. Creates a **tag** (github release) with the name 'vX.X.X' and as description 'Version X.X.X'
 4. **Push** to remote (with tags)
-5. **`npm publish`** (with **`npm run build`** as **prepublish** script) 
+5. **`npm publish`** (with **`npm run build`** as **prepublish** script)
 
 ⚠️ don't forget to answer `Y` on the 'publish to npm' question
 
@@ -139,7 +139,7 @@ You can change the release settings in the `.release.json` file in the root of y
 
 ## Git Hooks
 
-There are 2 git hooks defined in in `package.json` 
+There are 2 git hooks defined in in `package.json`
 <br/>to check for **broken builds** and **preventing push or commit**.
 
 `pre-push` and `pre-commit` trigger:
@@ -152,4 +152,3 @@ There are 2 git hooks defined in in `package.json`
 ## License
 
 MIT
-
