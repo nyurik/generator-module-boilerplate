@@ -59,7 +59,7 @@ yo module-boilerplate
 
 ## Getting Started / Scripts
 
-### 👀 watch 
+### watch 👀
 
 Testing via [Jest](https://facebook.github.io/jest/) in [interactive watch mode](https://egghead.io/lessons/javascript-use-jest-s-interactive-watch-mode)
 
@@ -79,7 +79,7 @@ npm run build:watch
 
 ℹ️ use a [split terminal](https://hyper.is/) window for maximum developer experience
 
-### ⚙️ build
+### build ⚙️
 
 ```bash
 npm run build
@@ -101,7 +101,7 @@ which equals to:
 5. `npm run build:umd`
 
 
-### :white_check_mark: testing
+### testing :white_check_mark:
 
 [Jest](https://facebook.github.io/jest/) tests the [CommonJS](http://webpack.github.io/docs/commonjs.html) build folder (`/cjs`) for fast iteration
 
@@ -115,7 +115,7 @@ or with coverage (used in the git hooks and prepublish)
 npm run test:coverage
 ```
 
-### 🔖 releasing
+### releasing 🔖
 
 
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
@@ -137,7 +137,7 @@ npm run release (premajor|patch|minor|major)
 
 You can change the release settings in the `.release.json` file in the root of your module folder.
 
-## ⛏ Git Hooks
+## Git Hooks ⛏
 
 There are 2 git hooks defined in in `package.json`
 <br/>to check for **broken builds** and **preventing push or commit**.
