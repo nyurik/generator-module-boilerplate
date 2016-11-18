@@ -59,7 +59,7 @@ yo module-boilerplate
 
 ## Getting Started / Scripts
 
-### watch
+### watch 👀
 
 Testing via [Jest](https://facebook.github.io/jest/) in [interactive watch mode](https://egghead.io/lessons/javascript-use-jest-s-interactive-watch-mode)
 
@@ -79,7 +79,7 @@ npm run build:watch
 
 ℹ️ use a [split terminal](https://hyper.is/) window for maximum developer experience
 
-### build
+### build ⚙️
 
 ```bash
 npm run build
@@ -137,7 +137,7 @@ npm run release (premajor|patch|minor|major)
 
 You can change the release settings in the `.release.json` file in the root of your module folder.
 
-## Git Hooks
+## Git Hooks ⛏
 
 There are 2 git hooks defined in in `package.json`
 <br/>to check for **broken builds** and **preventing push or commit**.
