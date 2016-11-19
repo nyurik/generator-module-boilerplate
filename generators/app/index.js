@@ -173,6 +173,10 @@ module.exports = generator.Base.extend({
         {from: `_gitignore`, to: `.gitignore`}
       ];
 
+      const github = [
+        `CONTRIBUTING.md`
+      ];
+
       const babel = [
         `.babelrc`
       ];
@@ -197,6 +201,7 @@ module.exports = generator.Base.extend({
       const files = [
         ...eslint,
         ...git,
+        ...github,
         ...babel,
         ...rollup,
         ...editor,
