@@ -13,7 +13,7 @@
 - **[CommonJS](http://webpack.github.io/docs/commonjs.html)**: build (`/cjs`)  via [Babel](https://babeljs.io/)
 - **[ES2015](http://www.2ality.com/2014/09/es6-modules-final.html)**: build (`/es`) via [Babel](https://babeljs.io/)
 - **[UMD](https://github.com/umdjs/umd)** build: (`/dist`) via [Rollup](http://rollupjs.org/) (unminified & minified version)
-- **Watch scripts**: (build and/or test) `npm run build:(test|build)`
+- **Watch scripts**: (build and/or test) `npm run (test|build):watch`
 - **Git hooks**: pre-commit, pre-push defined in `package.json`
 - **prepublish** script `npm run build`
 
