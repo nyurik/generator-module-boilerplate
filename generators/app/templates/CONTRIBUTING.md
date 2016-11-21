@@ -26,7 +26,7 @@ In general, the contribution workflow looks like this:
 2. **Clone** the repo. `git clone https://github.com/your-username/<%= name %>.git`.
 3. Create a **new branch** based off the master branch, provide a **descriptive name** <br/>(ex. '**feat**-add-better-logging', '**bug**-removed-double-method', '**enh**-bumped-eslint')
 4. Before running the code you’ll need to **install** the **dependencies** (`npm install` or `yarn`).
-5. **Implement** your feature / bugfix (using the **watch scripts**), you should **only need to modify `/src`**. Don’t worry about regenerating the build folders (`/cjs`, `/es`, `/dist`), they are **build** in the **prepublish** phase.
+5. **Implement** your feature / bugfix (using the **watch scripts**), you should **only need to modify `/src`**. Don’t worry about regenerating the build folders (`/cjs`, `/es`, `/dist`), they are **built** in the **prepublish** phase.
 6. Make sure **all tests pass**, **coverage is 100%** and there are **no linting errors**.
 7. Submit a **PR**, referencing what it addresses.
 8. Please try to keep your **PR focused in scope and avoid including unrelated commits**<% if (gitmoji) { %>, use **[Gitmoji](https://gitmoji.carloscuesta.me/)** in your commits<% } %>.
@@ -83,3 +83,6 @@ $ npm run test:coverage
 
 Aim for **100% [coverage](https://en.wikipedia.org/wiki/Code_coverage)**.
 
+## Hooks
+
+We added **pre-commit** and **pre-push** **hooks** to make sure you **don't commit non-working code.**
