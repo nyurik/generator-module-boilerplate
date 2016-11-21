@@ -68,10 +68,9 @@ See [`example`](example/script.js) folder or the [runkit](https://runkit.com/<%=
 
 The code is available under the [<%= license %>](LICENSE) license.
 
-## Contributing
+### Contributing
 
-We are open to, and grateful for, any contributions made by the community.<br/>
-See [CONTRIBUTING](CONTRIBUTING.md) for more info.
+We are open to contributions, see [CONTRIBUTING.md](CONTRIBUTING.md) for more info.
 
 ### Misc
 
