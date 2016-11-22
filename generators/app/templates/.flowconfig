@@ -3,8 +3,10 @@
 .*/node_modules/findup/.*
 
 [libs]
+./node_modules/fbjs/flow/lib
 
 [options]
+module.system.node.resolve_dirname=node_modules
 
 suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
