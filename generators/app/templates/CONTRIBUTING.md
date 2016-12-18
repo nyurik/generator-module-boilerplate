@@ -6,6 +6,9 @@ For **support or usage questions** like "How do I do X with <%= name %>." and "M
 
 ## Bugs
 
+> The ideal GitHub issue (and even some feature requests) is not an issue, it's a PR with a failing test case.
+<br/> [@rauchg](https://twitter.com/rauchg/status/810589655532007424)
+
 **Before filing an issue please [search the issue tracker](https://github.com/<%= github %>/<%= name %>/issues); your issue may have already been discussed or fixed in `master`.**
 
 **Fill in the template** provided by the issue tracker, try to be as **clear** and **complete** as possible, providing a **[Short, Self Contained, Correct (Compilable), Example (SSCE)](http://sscce.org/)** (**link** to a **repository**) helps a lot .
