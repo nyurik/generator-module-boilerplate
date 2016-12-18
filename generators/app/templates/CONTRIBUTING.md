@@ -11,6 +11,8 @@ For **support or usage questions** like "How do I do X with <%= name %>." and "M
 
 **Before filing an issue please [search the issue tracker](https://github.com/<%= github %>/<%= name %>/issues); your issue may have already been discussed or fixed in `master`.**
 
+**If you want your issue to get priority, submit it as a PR instead**
+
 **Fill in the template** provided by the issue tracker, try to be as **clear** and **complete** as possible, providing a **[Short, Self Contained, Correct (Compilable), Example (SSCE)](http://sscce.org/)** (**link** to a **repository**) helps a lot .
 
 ## Feature / Enhancement Requests
