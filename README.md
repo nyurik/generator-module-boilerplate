@@ -123,7 +123,7 @@ npm run test:coverage
 <br/> ℹ️ premajor = x.x.x-beta.x
 
 ℹ️ the generated package.json starts with 0.1.0
-⚠️ watch out, semver has different rules pre 1.0.0
+<br/>⚠️ watch out, semver has different rules pre 1.0.0
 
 ```console
 npm run release (premajor|patch|minor|major)
