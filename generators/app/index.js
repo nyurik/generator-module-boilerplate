@@ -252,11 +252,14 @@ module.exports = generator.Base.extend({
     this._spawn(`git init`);
     this._spawn(`git remote add origin https://github.com/${github}/${name}.git`);
 
-    if (this.props.yarn) {
-      this._spawn(`yarn`);
-      this._spawn(`node node_modules/husky/bin/install`); // see husky readme.
-    }
+    if (this.props.yarn) this._spawn(`yarn`);
     else this._spawn(`npm install`);
+
+    this._spawn(`git add .`);
+    const emoji = this.props.gitmoji ? `:tada: ` : ``;
+    spawn(`git`, [`commit`, `-m`, `${emoji}initial commit`], {stdio: `inherit`});
+
+    if (this.props.yarn) this._spawn(`node node_modules/husky/bin/install`); // see husky readme.
 
     this._clearConsole();
 
