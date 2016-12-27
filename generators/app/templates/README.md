@@ -11,8 +11,6 @@
 
 ### Usage
 
-### setup
-
 ```js
 import <%= ccname %> from '<%= name %>';
 
@@ -57,7 +55,7 @@ import <%= ccname %> from '<%= name %>';
 
 See [`example`](example/script.js) folder or the [runkit](https://runkit.com/<%= github %>/<%= name %>) example.
 
-### Different Builds
+### Builds
 
 If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN)](https://unpkg.com/<%= name %>/), download the source, or point your package manager to the url.
 
