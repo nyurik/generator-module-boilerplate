@@ -34,7 +34,6 @@ or npm
 You can pass in extra options as a configuration object (➕ required, ➖ optional, ✏️ default).
 
 ```js
-
 import <%= ccname %> from '<%= name %>';
 
 ```
@@ -50,7 +49,6 @@ import <%= ccname %> from '<%= name %>';
 #### #name
 
 ```js
-
 <%= ccname %>
 
 ```
