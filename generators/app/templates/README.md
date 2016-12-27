@@ -14,7 +14,6 @@
 ### setup
 
 ```js
-
 import <%= ccname %> from '<%= name %>';
 
 ```
