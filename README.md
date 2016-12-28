@@ -24,6 +24,7 @@
 - ... with [npm](https://www.npmjs.com/), [Travis](https://travis-ci.org/), [David](https://david-dm.org/), [Gitmoji](https://gitmoji.carloscuesta.me/) **badges** :chart_with_upwards_trend:
 - **License** generation
 - **[Travis CI](https://travis-ci.org/)** integration :construction_worker:
+- **Coverage Reporting** via [Coveralls](https://coveralls.io/)
 - **Typechecking**: via **[Flow](https://flowtype.org/)** (optional)
 - **[webpro/release-it](https://github.com/webpro/release-it)** integration
 - **Optimized** for [modern bundlers](https://github.com/rollup/rollup/wiki/jsnext:main)
