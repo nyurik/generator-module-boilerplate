@@ -23,6 +23,8 @@
 
     "release": "release-it",
 
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+
     "lint": "npm run lint:eslint<% if (flow) {%> && npm run lint:flow<% } %>",
     "lint:eslint": "eslint src/*.js",
     <% if(flow) {%>"lint:flow": "flow --color always",<% } %>
@@ -30,8 +32,6 @@
     "test": "clear && jest",
     "test:coverage": "jest --coverage ",
     "test:watch": "clear && jest --watch",
-
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
 
     "lint:test": "npm run lint && npm run test:coverage",
 
