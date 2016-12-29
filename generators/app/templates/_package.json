@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "<%= description %>",
   "main": "cjs/index.js",
   "browser": "dist/<%= ccname %>.js",
@@ -59,7 +59,7 @@
     "eslint-config-devine": "^1.6.1",
     "eslint-plugin-babel": "^4.0.0",
     <% if(flow) { %>"flow-bin": "^0.37.0",<% } %>
-    "jest": "^17.0.0",
+    "jest": "^18.1.0",
     "rimraf": "^2.5.4",
     "release-it": "^2.5.1",
     "husky": "^0.12.0",
@@ -67,7 +67,7 @@
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-bundle-size": "^1.0.1",
-    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-commonjs": "^6.0.1",
     "rollup-plugin-uglify": "^1.0.1"
   }
 }
