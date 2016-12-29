@@ -123,7 +123,6 @@ npm run test:coverage
 ℹ️ more info on [webpro/release-it](https://github.com/webpro/release-it)
 <br/> ℹ️ premajor = x.x.x-beta.x
 
-ℹ️ the generated package.json starts with 0.1.0
 <br/>⚠️ watch out, semver has different rules pre 1.0.0
 
 ```console
