@@ -63,7 +63,7 @@ If you don't use a package manager, you can [access `<%= name %>` via unpkg (CDN
 `<%= name %>` is compiled as a collection of [CommonJS](http://webpack.github.io/docs/commonjs.html) modules & [ES2015 modules](http://www.2ality.com/2014/0
   -9/es6-modules-final.html) for bundlers that support the `jsnext:main` or `module` field in package.json (Rollup, Webpack 2)
 
-The `<%= name %>` package includes precompiled production and development [UMD](https://github.com/umdjs/umd) builds in the [`dist` folder](https://unpkg.com/<%= name %>/dist/). They can be used directly without a bundler and are thus compatible with many popular JavaScript module loaders and environments. You can drop a UMD build as a [`<script>` tag](https://unpkg.com/<%= name %>) on your page. The UMD builds make `<%= name %>` available as a `window.<%= ccname %>` global variable.
+The `<%= name %>` package includes precompiled production and development [UMD](https://github.com/umdjs/umd) builds in the [`dist/umd` folder](https://unpkg.com/<%= name %>/dist/umd/). They can be used directly without a bundler and are thus compatible with many popular JavaScript module loaders and environments. You can drop a UMD build as a [`<script>` tag](https://unpkg.com/<%= name %>) on your page. The UMD builds make `<%= name %>` available as a `window.<%= ccname %>` global variable.
 
 ### License
 
