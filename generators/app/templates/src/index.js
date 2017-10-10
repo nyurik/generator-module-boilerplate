@@ -1,3 +1,3 @@
-export function helloWorld() {
+export default () => {
   return `hello world`;
-}
+};
